@@ -181,6 +181,15 @@ const RequestQuoteMain = () => {
 											<h6>Sydney, Central Coast, and Wollongong</h6>
 										</div>
 									</div>
+									<div className="contact__area-left-contact-item">
+										<div className="contact__area-left-contact-item-icon">
+											<i className="fab fa-whatsapp"></i>
+										</div>
+										<div className="contact__area-left-contact-item-content">
+											<span>WhatsApp:</span>
+											<h6><a href="https://wa.me/61414603059" target="_blank" rel="noopener noreferrer">+61 414 603 059</a></h6>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

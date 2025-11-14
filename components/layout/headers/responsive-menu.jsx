@@ -39,15 +39,15 @@ const ResponsiveMenu = () => {
             </ul>
             <a className={`mean-expand ${activeIcon("pages")}`} onClick={() => active("pages")}></a>
         </li>
-		<li className='menu-item-has-children'><Link href='/services'>Services</Link>
-            <ul className='sub-menu' style={activeSubMenu("services")}>
+		<li><Link href='/services'>Services</Link>
+            {/* <ul className='sub-menu' style={activeSubMenu("services")}>
 				<li><Link href='/services'>Services 01</Link></li>
 				<li><Link href='/services-two'>Services 02</Link></li>
 				<li><Link href='/services/business-model'>Services Details</Link></li>
-			</ul>
-            <a className={`mean-expand ${activeIcon("services")}`} onClick={() => active("services")}></a>
+			</ul> */}
+            {/* <a className={`mean-expand ${activeIcon("services")}`} onClick={() => active("services")}></a> */}
 		</li>
-        <li className='menu-item-has-children'><Link href='/portfolio/3-columns'>Project</Link>
+        {/* <li className='menu-item-has-children'><Link href='/portfolio/3-columns'>Project</Link>
             <ul className='sub-menu' style={activeSubMenu("project")}>
 				<li><Link href='/portfolio-filter'>Project Filter</Link></li>
 				<li className='menu-item-has-children'><Link href='/portfolio/2-columns'>Project Grid</Link>
@@ -61,7 +61,7 @@ const ResponsiveMenu = () => {
                 <li><Link href='/portfolio/business-analytics'>Project Details</Link></li>
             </ul>
             <a className={`mean-expand ${activeIcon("project")}`} onClick={() => active("project")}></a>
-        </li>
+        </li> */}
         {/* <li className='menu-item-has-children'><Link href='/blog'>Blog</Link>
             <ul className='sub-menu' style={activeSubMenu("blog")}>
                 <li><Link href='/blog'>Blog Grid</Link></li>

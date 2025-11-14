@@ -1,4 +1,5 @@
-
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import logo from "../../../public/assets/img/sharpline-logo.png";
 import subscribeBg from "../../../public/assets/img/page/banner-video.png";
@@ -7,6 +8,53 @@ import blogData from "@/components/data/blog-data";
 import OptimizedImage from '@/components/common/OptimizedImage';
 
 const FooterTwo = () => {
+    const [email, setEmail] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [message, setMessage] = useState({ type: '', text: '' });
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        if (!email.trim()) {
+            setMessage({ type: 'error', text: 'Please enter your email address.' });
+            return;
+        }
+
+        // Validate email format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setMessage({ type: 'error', text: 'Please enter a valid email address.' });
+            return;
+        }
+
+        setIsSubmitting(true);
+        setMessage({ type: '', text: '' });
+
+        try {
+            const response = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email: email.trim() }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                setMessage({ type: 'success', text: data.message || 'Thank you for subscribing! Please check your email for confirmation.' });
+                setEmail(''); // Clear the form
+            } else {
+                setMessage({ type: 'error', text: data.error || 'Something went wrong. Please try again later.' });
+            }
+        } catch (error) {
+            console.error('Subscription error:', error);
+            setMessage({ type: 'error', text: 'Failed to subscribe. Please try again later or contact us directly.' });
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <>
             <div className="footer__two">
@@ -20,10 +68,40 @@ const FooterTwo = () => {
                             </div>
                             <div className="col-lg-6">
                                 <div className="subscribe__area-form wow fadeInUp" data-wow-delay=".4s">
-                                    <form>
-                                        <input type="email" name="email" placeholder="Email address" />
-                                        <button className="build_button" type="submit">Subscribe Now</button>
+                                    <form onSubmit={handleSubmit}>
+                                        <input 
+                                            type="email" 
+                                            name="email" 
+                                            placeholder="Email address" 
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            disabled={isSubmitting}
+                                            required
+                                        />
+                                        <button 
+                                            className="build_button" 
+                                            type="submit"
+                                            disabled={isSubmitting}
+                                        >
+                                            {isSubmitting ? 'Subscribing...' : 'Subscribe Now'}
+                                        </button>
                                     </form>
+                                    {message.text && (
+                                        <div 
+                                            style={{
+                                                marginTop: '15px',
+                                                padding: '12px',
+                                                borderRadius: '5px',
+                                                fontSize: '14px',
+                                                backgroundColor: message.type === 'success' ? '#d4edda' : '#f8d7da',
+                                                color: message.type === 'success' ? '#155724' : '#721c24',
+                                                border: `1px solid ${message.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`,
+                                                textAlign: 'center'
+                                            }}
+                                        >
+                                            {message.text}
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>

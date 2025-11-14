@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
 
 export default function ClientScripts() {
     useEffect(() => {
@@ -12,6 +13,6 @@ export default function ClientScripts() {
         });
     }, []);
 
-    return null;
+    return <WhatsAppButton />;
 }
 

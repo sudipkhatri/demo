@@ -48,6 +48,15 @@ const SideBar = ({ isOpen, setIsOpen }) => {
                             <h6>Sydney, Central Coast, and Wollongong</h6>
                         </div>
                     </div>
+                    <div className="header__area-menubar-right-sidebar-popup-contact-item">
+                        <div className="header__area-menubar-right-sidebar-popup-contact-item-icon">
+                            <i className="fab fa-whatsapp"></i>
+                        </div>
+                        <div className="header__area-menubar-right-sidebar-popup-contact-item-content">
+                            <span>WhatsApp:</span>
+                            <h6><Link href="https://wa.me/61414603059" target="_blank" rel="noopener noreferrer">+61 414 603 059</Link></h6>
+                        </div>
+                    </div>
                 </div>
                 <div className="header__area-menubar-right-sidebar-popup-social">
                     <Social />							
