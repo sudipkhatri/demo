@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import portfolioData from '../../../data/portfolio-data';
 import Link from 'next/link';
+import OptimizedImage from '@/components/common/OptimizedImage';
 
 const filters = [
     { id: 1, name: "All", filterData: "all", },
-    { id: 2, name: "Marketing", filterData: "marketing", },
-    { id: 3, name: "Business", filterData: "business", },
-    { id: 4, name: "Corporate", filterData: "corporate", },
+    { id: 2, name: "Demolition", filterData: "marketing", },
+    { id: 3, name: "Maintenance", filterData: "business", },
+    { id: 4, name: "Cleaning", filterData: "corporate", },
 ];
 
 const getFilteredProjects = (filterData) => {
@@ -40,7 +41,12 @@ const PortfolioFilter = () => {
                             <div className="col-xl-4 col-md-6 mt-25" key={id}>
                                 <div className="portfolio__four-item">
                                     <Link href={`/portfolio/${data.id}`}><i className="flaticon flaticon-right-up"></i></Link>
-                                    <img src={data.image.src} alt="image" />
+                                    <OptimizedImage
+                                        src={data.image.src}
+                                        alt="image"
+                                        width={1300}
+                                        height={750}
+                                      />
                                     <div className="portfolio__four-item-content">
                                         <span>{data.subtitle}</span>
                                         <h5><Link href={`/portfolio/${data.id}`}>{data.title}</Link></h5>

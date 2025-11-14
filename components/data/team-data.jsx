@@ -59,7 +59,7 @@ const teamData = [
     {
         id: 'alan-dosan',
         image: team5,
-        position: 'Lead Architect',
+        position: 'Property Services Manager',
         name: 'Alan Dosan',
         category: 'manager',
         social_link: [

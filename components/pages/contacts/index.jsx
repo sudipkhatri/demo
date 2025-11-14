@@ -21,7 +21,7 @@ const ContactUs = () => {
                     <div className="row">
                         <div className="col-xl-12 wow fadeInUp" data-wow-delay=".4s">
                             <div className="map-area">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894606!2d-74.11976383964463!3d40.69766374865767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1652012644726!5m2!1sen!2sbd" loading="lazy" title="London Eye, London, United Kingdom" aria-label="London Eye, London, United Kingdom"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424146.985749404!2d150.6515679!3d-33.8473567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632aac!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sau!4v1234567890123!5m2!1sen!2sau" loading="lazy" title="Sydney, NSW, Australia" aria-label="Sydney, NSW, Australia"></iframe>
                             </div>
                         </div>
                     </div>

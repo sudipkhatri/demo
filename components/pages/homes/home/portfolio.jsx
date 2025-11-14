@@ -1,77 +1,40 @@
 import Link from "next/link";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade, Autoplay, Navigation} from 'swiper/modules';
-import portfolioData from "../../../data/portfolio-data";
+import portfolioData from '../../../data/portfolio-data';
+import OptimizedImage from '@/components/common/OptimizedImage';
 
-const portfolioItem = portfolioData.slice(0, 5);
-const slideControl = {
-    spaceBetween: 25,
-    slidesPerView: 4,
-    speed: 1000,
-    loop: true,
-    autoplay: {
-        delay: 4000,
-        reverseDirection: false,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: '.portfolio_next',
-        prevEl: '.portfolio_prev',
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1025: {
-            slidesPerView: 3,
-        },
-        1600: {
-            slidesPerView: 2.7,
-        },
-    },
-};
-
-const Portfolio = () => {
-
+const PortfolioTwo = () => {
+    const portfolioItem = portfolioData.slice(0, 4);
     return (
-        <div className="portfolio__one">
+        <div className="portfolio__two section-padding">
             <div className="container">
-                <div className="row al-end">
-                    <div className="col-lg-7">
-                        <div className="portfolio__one-title lg-t-center lg-mb-20">
+                <div className="row">
+                    <div className="col-lg-5 columns_sticky lg-mb-25">
+                        <div className="portfolio__two-left mr-40 xl-mr-0">
                             <span className="subtitle wow fadeInLeft" data-wow-delay=".4s">Our Portfolio</span>
-                            <h2 className="wow fadeInRight" data-wow-delay=".6s">Discover Our Builds</h2>
-                        </div>
-                    </div>
-                    <div className="col-lg-5 wow fadeInDown" data-wow-delay=".4s">
-                        <div className="slider-arrow jc-end lg-jc-center mb-10">
-                            <div className="slider-arrow-prev portfolio_prev">
-                                <i className="fa-sharp fa-regular fa-arrow-left-long"></i>
-                            </div>
-                            <div className="slider-arrow-next portfolio_next">
-                                <i className="fa-sharp fa-regular fa-arrow-right-long"></i>
+                            <h2 className="wow fadeInRight" data-wow-delay=".6s">Showcasing Our Property Service Projects</h2>
+                            <div className="wow fadeInDown" data-wow-delay="1.2s">
+                                <Link className="build_button mt-35" href="/portfolio">All Project<i className="flaticon-right-up"></i></Link>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="row mt-60 wow fadeInUp data_cursor" data-wow-delay=".5s" data-cursor-text="Drag">
-                    <div className="col-xl-12">
-                        <Swiper className='portfolio_slide' modules={[EffectFade, Autoplay, Navigation]} {...slideControl} >
+                    <div className="col-lg-7">
+                        <div className="portfolio__two-right">
                             {portfolioItem?.map((data, id) => (
-                                <SwiperSlide key={id}>
-                                    <div className="portfolio__one-item">
-                                        <img src={data.image.src} alt="image" />
-                                        <div className="portfolio__one-item-content">
-                                            <span>{data.subtitle}</span>
-                                            <h4><Link href={`/portfolio/${data.id}`}>{data.title}</Link></h4>
-                                        </div>
+                                <div className="portfolio__two-item mt-25 card_sticky" key={id}>
+                                    <OptimizedImage
+                                        src={data.image.src}
+                                        alt="image"
+                                        width={1300}
+                                        height={750}
+                                      />
+                                    <div className="portfolio__two-item-content">
+                                        <span>{data.subtitle}</span>
+                                        <h4><Link href={`/portfolio/${data.id}`}>{data.title}</Link></h4>
+                                        <Link href={`/portfolio/${data.id}`}><i className="flaticon-right-up"></i></Link>
                                     </div>
-                                </SwiperSlide>
+                                </div>
                             ))}
-                        </Swiper> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -79,4 +42,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default PortfolioTwo;

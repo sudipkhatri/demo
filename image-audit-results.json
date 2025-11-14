@@ -1,0 +1,257 @@
+{
+  "dimensions": {
+    "assets/img/blog/blog-1.jpg": {
+      "width": 1100,
+      "height": 660
+    },
+    "assets/img/blog/blog-2.jpg": {
+      "width": 1100,
+      "height": 660
+    },
+    "assets/img/blog/blog-3.jpg": {
+      "width": 1100,
+      "height": 660
+    },
+    "assets/img/blog/blog-4.jpg": {
+      "width": 1100,
+      "height": 660
+    },
+    "assets/img/blog/blog-5.jpg": {
+      "width": 1100,
+      "height": 660
+    },
+    "assets/img/blog/blog-6.jpg": {
+      "width": 1100,
+      "height": 660
+    },
+    "assets/img/portfolio/portfolio-1.jpg": {
+      "width": 1300,
+      "height": 750
+    },
+    "assets/img/portfolio/portfolio-2.jpg": {
+      "width": 1300,
+      "height": 750
+    },
+    "assets/img/portfolio/portfolio-3.jpg": {
+      "width": 1300,
+      "height": 750
+    },
+    "assets/img/portfolio/portfolio-4.jpg": {
+      "width": 1300,
+      "height": 750
+    },
+    "assets/img/portfolio/portfolio-5.jpg": {
+      "width": 1300,
+      "height": 750
+    },
+    "assets/img/portfolio/portfolio-6.jpg": {
+      "width": 1300,
+      "height": 750
+    },
+    "assets/img/portfolio/portfolio-7.jpg": {
+      "width": 1300,
+      "height": 750
+    },
+    "assets/img/portfolio/portfolio-8.jpg": {
+      "width": 1300,
+      "height": 750
+    },
+    "assets/img/service/services-1.jpg": {
+      "width": 1200,
+      "height": 760
+    },
+    "assets/img/service/services-2.jpg": {
+      "width": 1200,
+      "height": 760
+    },
+    "assets/img/service/services-3.jpg": {
+      "width": 1200,
+      "height": 760
+    },
+    "assets/img/service/services-4.jpg": {
+      "width": 1200,
+      "height": 760
+    },
+    "assets/img/service/services-5.jpg": {
+      "width": 1200,
+      "height": 760
+    },
+    "assets/img/service/services-6.jpg": {
+      "width": 1200,
+      "height": 760
+    },
+    "assets/img/team/team-1.jpg": {
+      "width": 312,
+      "height": 370
+    },
+    "assets/img/team/team-2.jpg": {
+      "width": 312,
+      "height": 370
+    },
+    "assets/img/team/team-3.jpg": {
+      "width": 312,
+      "height": 370
+    },
+    "assets/img/team/team-4.jpg": {
+      "width": 312,
+      "height": 370
+    },
+    "assets/img/team/member-1.jpg": {
+      "width": 680,
+      "height": 800
+    },
+    "assets/img/team/member-2.jpg": {
+      "width": 680,
+      "height": 800
+    },
+    "assets/img/team/member-3.jpg": {
+      "width": 680,
+      "height": 800
+    },
+    "assets/img/team/member-4.jpg": {
+      "width": 680,
+      "height": 800
+    },
+    "assets/img/sharpline-logo.png": {
+      "width": 1149,
+      "height": 382
+    },
+    "assets/img/page/subscribe.jpg": {
+      "width": 1320,
+      "height": 408
+    },
+    "assets/img/page/banner-video.png": {
+      "width": 1917,
+      "height": 1080
+    },
+    "assets/img/logo-2.png": {
+      "width": 392,
+      "height": 80
+    },
+    "assets/img/about/about-4.jpg": {
+      "width": 564,
+      "height": 740
+    },
+    "assets/img/page/who-we-are.jpg": {
+      "width": 870,
+      "height": 420
+    },
+    "assets/img/service/service-1.jpg": {
+      "width": 700,
+      "height": 300
+    },
+    "assets/img/team/member-5.jpg": {
+      "width": 680,
+      "height": 800
+    },
+    "assets/img/about/about-1.jpg": {
+      "width": 453,
+      "height": 499
+    },
+    "assets/img/page/choose-us.jpg": {
+      "width": 572,
+      "height": 421
+    },
+    "assets/img/page/breadcrumb.jpg": {
+      "width": 1920,
+      "height": 500
+    },
+    "assets/img/banner/banner-1.jpg": {
+      "width": 1920,
+      "height": 980
+    },
+    "assets/img/banner/banner-2.jpg": {
+      "width": 1920,
+      "height": 980
+    },
+    "assets/img/banner/banner-3.jpg": {
+      "width": 1920,
+      "height": 980
+    },
+    "assets/img/brand/brand-1.png": {
+      "width": 132,
+      "height": 30
+    },
+    "assets/img/brand/brand-2.png": {
+      "width": 75,
+      "height": 30
+    },
+    "assets/img/brand/brand-3.png": {
+      "width": 126,
+      "height": 30
+    },
+    "assets/img/brand/brand-4.png": {
+      "width": 119,
+      "height": 30
+    },
+    "assets/img/brand/brand-5.png": {
+      "width": 82,
+      "height": 30
+    },
+    "assets/img/brand/brand-6.png": {
+      "width": 160,
+      "height": 30
+    },
+    "assets/img/brand/brand-7.png": {
+      "width": 133,
+      "height": 30
+    },
+    "assets/img/brand/brand-8.png": {
+      "width": 78,
+      "height": 30
+    },
+    "assets/img/about/about-3.jpg": {
+      "width": 760,
+      "height": 598
+    },
+    "assets/img/about/about-2.jpg": {
+      "width": 250,
+      "height": 329
+    },
+    "assets/img/avatar/video.png": {
+      "width": 189,
+      "height": 90
+    },
+    "assets/img/avatar/video-dark.png": {
+      "width": 189,
+      "height": 90
+    },
+    "assets/img/about/about-5.jpg": {
+      "width": 245,
+      "height": 410
+    },
+    "assets/img/about/about-6.jpg": {
+      "width": 375,
+      "height": 391
+    },
+    "assets/img/page/skill.jpg": {
+      "width": 650,
+      "height": 270
+    },
+    "assets/img/shape/content.png": {
+      "width": 140,
+      "height": 140
+    },
+    "assets/img/page/image-2.jpg": {
+      "width": 636,
+      "height": 280
+    },
+    "assets/img/page/services.jpg": {
+      "width": 1060,
+      "height": 453
+    },
+    "assets/img/page/cta.jpg": {
+      "width": 360,
+      "height": 450
+    },
+    "assets/img/shape/content-1.png": {
+      "width": 170,
+      "height": 170
+    },
+    "assets/img/page/cta-1.jpg": {
+      "width": 408,
+      "height": 470
+    }
+  },
+  "missing": []
+}

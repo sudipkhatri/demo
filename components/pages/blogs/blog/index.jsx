@@ -12,11 +12,11 @@ import CustomCursor from "../../common/cursor";
 const BlogGrid = () => {
     return (
         <>
-            <SEO pageTitle='Blog Grid' />
+            <SEO pageTitle='News & Insights' />
             <SwitchTab />
             <CustomCursor />
             <HeaderTwo />
-            <BreadCrumb title="Blog Grid" innerTitle="Blog Grid" />
+            <BreadCrumb title="News & Insights" innerTitle="News & Insights" />
             <BlogGridMain />
             <FooterOne />
             <ScrollToTop />

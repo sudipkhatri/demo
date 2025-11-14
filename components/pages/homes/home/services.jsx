@@ -1,10 +1,9 @@
-import React from 'react';
 import Link from "next/link";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Navigation} from 'swiper/modules';
 import servicesData from '../../../data/services-data';
 
-const Services = () => {
+const ServicesTwo = () => {
     const slideControl = {
         spaceBetween: 25,
         slidesPerView: 4,
@@ -35,28 +34,18 @@ const Services = () => {
         },
     };
     return (
-        <div className="services__one section-padding">
+        <div className="services__two section-padding">
             <div className="container">
                 <div className="row al-end">
-                    <div className="col-lg-8">
-                        <div className="services__one-title lg-t-center lg-mb-20">
+                    <div className="col-lg-12">
+                        <div className="services__two-title t-center">
                             <span className="subtitle wow fadeInLeft" data-wow-delay=".4s">Our Services</span>
-                            <h2 className="wow fadeInRight" data-wow-delay=".6s">Provide Quality Services</h2>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 wow fadeInDown" data-wow-delay=".4s">
-                        <div className="slider-arrow jc-end lg-jc-center mb-10">
-                            <div className="slider-arrow-prev service_prev">
-                                <i className="fa-sharp fa-regular fa-arrow-left-long"></i>
-                            </div>
-                            <div className="slider-arrow-next service_next">
-                                <i className="fa-sharp fa-regular fa-arrow-right-long"></i>
-                            </div>
+                            <h2 className="wow fadeInRight" data-wow-delay=".6s">Complete Property Solutions</h2>
                         </div>
                     </div>
                 </div>
                 <div className="row mt-60 wow fadeInUp data_cursor" data-wow-delay=".5s" data-cursor-text="Drag">
-                    <div className="col-xl-12">
+                    <div className="col-xl-12 slider-area">
                         <Swiper modules={[EffectFade, Autoplay, Navigation]} {...slideControl} >
                             {servicesData?.map((data, id) => (
                                 <SwiperSlide key={id}>
@@ -68,6 +57,14 @@ const Services = () => {
                                 </SwiperSlide>
                             ))}
                         </Swiper>
+                        <div className="slider-arrow">
+                            <div className="slider-arrow-prev service_prev">
+                                <i className="fa-sharp fa-regular fa-arrow-left-long"></i>
+                            </div>
+                            <div className="slider-arrow-next service_next">
+                                <i className="fa-sharp fa-regular fa-arrow-right-long"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,4 +72,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default ServicesTwo;

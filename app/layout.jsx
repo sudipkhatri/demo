@@ -1,27 +1,20 @@
-"use client";
-import { useEffect } from "react";
 import "./globals.css";
+import ClientScripts from "@/components/client-scripts";
+
+export const metadata = {
+    title: "Sharpline Solutions - Property Services Sydney",
+    description: "Premier provider of comprehensive property services across Sydney, Central Coast, and Wollongong. Specializing in demolition, labour hire, floor grinding, waste management, cleaning, and property maintenance.",
+};
 
 export default function RootLayout({ children }) {
-    useEffect(() => {
-        // Dynamically import Bootstrap JavaScript
-        import("bootstrap/dist/js/bootstrap.min.js");
-
-        // Dynamically import WOW.js and initialize
-        import("wowjs").then(({ WOW }) => {
-            new WOW({ live: false }).init();
-        });
-    }, []);
-
     return (
         <html lang="en">
             <head>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>My Application</title>
-                <link rel="icon" type="image/png" href="/favicon.ico" />
             </head>
             <body>
+                <ClientScripts />
                 {children}
             </body>
         </html>

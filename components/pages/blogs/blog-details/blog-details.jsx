@@ -26,12 +26,12 @@ const BlogSingleMain = ({singleData}) => {
                             <div className="blog__details-area-box">
                                 <i className="fas fa-quote-right"></i>
                                 <div>
-                                    <h6>This article sheds light on important industry trends, offering valuable strategies for navigating construction challenges effectively</h6>                                
+                                    <h6>This article sheds light on important industry trends, offering valuable strategies for navigating property service challenges effectively</h6>                                
                                     <span>Sarah L - Project Coordinator</span>
                                 </div>
                             </div>
-                            <h4 className="mb-20">Worker Productivity due to Safety Concerns</h4>
-                            <p>Rain is one of the most common weather-related factors that can disrupt a construction project. Heavy rainfall can cause delays in various activities, such as excavation, concrete pouring, and roofing. Wet surfaces can lead to safety hazards like slips and falls, and excessive water can damage materials such as wood, drywall, or electrical components.</p>
+                            <h4 className="mb-20">Weather Considerations for Property Services</h4>
+                            <p>Weather conditions can significantly impact property service projects. Heavy rainfall can cause delays in demolition, waste management, and outdoor cleaning activities. Wet surfaces can lead to safety hazards, and proper planning ensures we adapt our services to weather conditions while maintaining safety and quality standards.</p>
                             <div className="row mt-40 mb-40 blog__details-area-image">
                                 <div className="col-sm-6 sm-mb-25">
                                     <img src={image1.src} alt="image" />
@@ -40,7 +40,7 @@ const BlogSingleMain = ({singleData}) => {
                                     <img src={image2.src} alt="image" />
                                 </div>
                             </div>
-                            <p>Delivering superior construction projects through expert craftsmanship, innovative techniques, and a commitment to quality. It involves balancing aesthetics with functionality, ensuring that each structure not only looks impressive but also stands the test of time. This approach focuses on meticulous planning, sustainable materials, and advanced technology to create buildings that are both durable and efficient. By prioritizing attention to detail and client satisfaction.</p>
+                            <p>Delivering superior property services through expert techniques, innovative solutions, and a commitment to quality. We balance efficiency with thoroughness, ensuring that each service not only meets but exceeds expectations. Our approach focuses on meticulous planning, sustainable practices, and advanced equipment to deliver services that are both effective and environmentally responsible. By prioritizing attention to detail and client satisfaction.</p>
                             <div className="blog__details-area-tag">
                                 <h5>Related Tags :</h5>
                                 <div className="all__sidebar-item-tag">

@@ -1,11 +1,11 @@
-import TeamPage from '@/components/pages/teams/team';
+import TeamPageThree from "@/components/pages/teams/team-3";
 
-const Team = () => {
+const TeamPage = () => {
     return (
         <>
-            <TeamPage />
+            <TeamPageThree />
         </>
     );
 };
 
-export default Team;
+export default TeamPage;

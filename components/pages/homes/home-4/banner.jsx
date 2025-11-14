@@ -14,7 +14,7 @@ const BannerFour = () => {
     return (
         <div className="banner__four">
             <div className="bg-video">
-                <video autoPlay muted loop playsInline><source src="https://html.themeori.net/buildgo/assets/img/banner/banner.mp4" type="video/mp4" /></video>
+                <video autoPlay muted loop playsInline><source src="https://html.themeori.net/sharpline-solutions/assets/img/banner/banner.mp4" type="video/mp4" /></video>
             </div>
             <div className="container">
                 <div className="row">

@@ -11,7 +11,7 @@ import ScrollToTop from "../common/scroll/scroll-to-top";
 const History = () => {
     return (
         <>
-            <SEO pageTitle="About Us" />
+            <SEO pageTitle="Company History" />
             <CustomCursor />
             <SwitchTab />
             <HeaderTwo />

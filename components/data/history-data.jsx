@@ -6,33 +6,33 @@ import image5 from "../../public/assets/img/portfolio/portfolio-5.jpg";
 
 const historyData = [
     {
-        date: "2010",
-        title: "Start Company",
-        description: "Launching a new company is an exciting journey that requires careful planning and execution. Let’s begin!",
+        date: "2020",
+        title: "Company Founded",
+        description: "Sharpline Solutions was established with a vision to provide comprehensive property services across Sydney, Central Coast, and Wollongong.",
         image: image1,
     },
     {
-        date: "2014",
-        title: "Opening Office",
-        description: "Opening a new office represents growth and opportunity. Join us as we expand our operations!",
+        date: "2021",
+        title: "Service Expansion",
+        description: "Expanded our service offerings to include demolition, labour hire, floor grinding, waste management, cleaning, and property maintenance.",
         image: image2,
     },
     {
-        date: "2018",
-        title: "Project Management",
-        description: "Effective project management ensures timely delivery and quality results. Our expert team is here to help!",
+        date: "2022",
+        title: "Regional Growth",
+        description: "Extended our reach across Central Coast and Wollongong, establishing a strong presence in these regions with dedicated local teams.",
         image: image3,
     },
     {
-        date: "2021",
-        title: "Open Research Team",
-        description: "Our open research team is dedicated to innovation and collaboration, driving impactful solutions for clients.",
+        date: "2023",
+        title: "Team Expansion",
+        description: "Grew our team to 50+ skilled professionals, ensuring we have the expertise and capacity to handle projects of any scale.",
         image: image4,
     },
     {
-        date: "2025",
-        title: "Winning Award",
-        description: "Winning awards showcases our commitment to excellence and innovation. Thank you for believing.",
+        date: "2024",
+        title: "250+ Projects",
+        description: "Successfully completed over 250 projects with a 98% client satisfaction rate, demonstrating our commitment to excellence.",
         image: image5,
     },
 ];

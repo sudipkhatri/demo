@@ -11,11 +11,11 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const TeamPageThree = () => {
     return (
         <>
-            <SEO pageTitle="Team Three" />
+            <SEO pageTitle="Our Team" />
             <CustomCursor />
             <SwitchTab />
             <HeaderTwo />
-            <BreadCrumb title="Team Three" innerTitle="Team Three" />
+            <BreadCrumb title="Our Team" innerTitle="Our Team" />
             <TeamMain />
             <FooterOne />
             <ScrollToTop />

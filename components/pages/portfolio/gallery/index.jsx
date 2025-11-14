@@ -11,11 +11,11 @@ import ScrollToTop from "../../common/scroll/scroll-to-top";
 const PortfolioFilterPage = () => {
     return (
         <>
-            <SEO pageTitle="Filterable Gallery" />
+            <SEO pageTitle="Our Projects" />
             <CustomCursor />
             <SwitchTab />
             <HeaderTwo />
-            <BreadCrumb title="Filterable Gallery" innerTitle="Filterable Gallery" />
+            <BreadCrumb title="Our Projects" innerTitle="Our Projects" />
             <PortfolioFilter />
             <FooterOne />
             <ScrollToTop />

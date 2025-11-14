@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from "next/link";
 import ctaImage from '../../../../public/assets/img/page/cta-1.jpg';
-import image1 from '../../../../public/assets/img/portfolio/portfolio-5.jpg';
-import image2 from '../../../../public/assets/img/portfolio/portfolio-8.jpg';
+//import image1 from '../../../../public/assets/img/portfolio/portfolio-5.jpg';
+//import image2 from '../../../../public/assets/img/portfolio/portfolio-8.jpg';
 import servicesData from '@/components/data/services-data';
+import OptimizedImage from '@/components/common/OptimizedImage';
 
 const ServicesSingleMain = ({singleData}) => {
     return (
@@ -23,11 +24,11 @@ const ServicesSingleMain = ({singleData}) => {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="all__sidebar-item-help mb-25" style={{backgroundImage: `url(${ctaImage.src})`}}>
-                                    <h3>Ready for Your Next Construction?</h3>
-                                    <Link className="build_button mt-20" href="/contact-us">Get an Advice<i className="flaticon-right-up"></i></Link>
-                                </div>
-                                <div className="all__sidebar-item">
+                                {/* <div className="all__sidebar-item-help mb-25" style={{backgroundImage: `url(${ctaImage.src})`}}>
+                                    <h3>Need Property Services?</h3>
+                                    <Link className="build_button mt-20" href="/contact-us">Get a Quote<i className="flaticon-right-up"></i></Link>
+                                </div> */}
+                                {/* <div className="all__sidebar-item">
                                     <h4>Download</h4>
                                     <div className="all__sidebar-item-download">
                                         <ul>
@@ -35,50 +36,67 @@ const ServicesSingleMain = ({singleData}) => {
                                             <li><Link href="#">Our Brochures<span className="fal fa-arrow-to-bottom"></span></Link></li>
                                         </ul>                            
                                     </div>
-                                </div>
+                                </div> */}
                             </div>  
                         </div>
                         <div className="col-lg-8">
                             <div className="services__details-area">
-                                <img src={singleData.image.src} alt="image" />
+                                <OptimizedImage
+                                        src={singleData.image.src}
+                                        alt="image"
+                                        width={1200}
+                                        height={760}
+                                      />
                                 <h3 className="mt-25 mb-20">{singleData.title}</h3>
-                                <p className="mb-20">We pride ourselves on delivering high-quality construction services tailored to meet the unique needs of our clients. With years of experience in the industry, our team of skilled professionals is dedicated to bringing your vision to life. Whether you are looking to build a new structure, renovate an existing space, or need specialized construction services, we are here to help.</p>
-                                <p className="mb-25">With years of industry experience, our team handles every aspect of the construction process, your project runs smoothly and efficiently. We prioritize open communication, timely delivery, and quality workmanship to exceed your expectations. Trust us to provide innovative solutions that.</p>
-                                <h4 className="mb-20">Building with Unmatched Excellence</h4>
-                                <p>Transform your existing space with our renovation and remodeling services. Whether you want to update your kitchen, bathroom, or entire home, we bring innovative solutions to enhance your living space. Our team has extensive experience in commercial construction, including office buildings, retail spaces, and industrial facilities. We work closely with you to ensure your project align.</p>
-                                <div className="row mt-40 mb-40">
+                                <p className="mb-20">{singleData.description}</p>
+                                <p className="mb-25">Our experienced team ensures every project is completed to the highest standards, with attention to detail and commitment to safety. We work closely with you to understand your specific requirements and deliver results that exceed expectations.</p>
+                                <h4 className="mb-20">Professional Service Delivery</h4>
+                                <p>We utilize industry-leading techniques and equipment to ensure efficient, safe, and quality results. Our team is fully licensed, insured, and committed to maintaining the highest standards of professionalism throughout every project.</p>
+                                {/* <div className="row mt-40 mb-40">
                                     <div className="col-sm-6 sm-mb-25">
-                                        <img className="img_full" src={image1.src} alt="image" />
+                                        <OptimizedImage
+                                        src={image1.src}
+                                        alt="image"
+                                        width={1300}
+                                        height={750}
+                                        className="img_full"
+                                      />
                                     </div>
                                     <div className="col-sm-6">
-                                        <img className="img_full" src={image2.src} alt="image" />
+                                        <OptimizedImage
+                                        src={image2.src}
+                                        alt="image"
+                                        width={1300}
+                                        height={750}
+                                        className="img_full"
+                                      />
                                     </div>
-                                </div>
-                                <p>We deliver exceptional construction services backed by years of experience. Our skilled team prioritizes quality, transparency, and client satisfaction. We utilize innovative techniques and sustainable practices, ensuring timely project completion. Trust us to bring your to life with unmatched craftsmanship</p>
+                                </div> */}
+                                <p>We deliver exceptional property services with a focus on quality, efficiency, and customer satisfaction. Our team combines industry expertise with practical experience to ensure your project is completed on time and within budget.</p>
                                 <ul className="services__details-area-list">
-                                    <li><i className="flaticon-check-mark"></i>Our skilled professionals bring years of experience a</li>
-                                    <li><i className="flaticon-check-mark"></i>We are the leading construction company in the industry.</li>
-                                    <li><i className="flaticon-check-mark"></i>Our transparent pricing ensures no hidden fees or surprises.</li>
-                                    <li><i className="flaticon-check-mark"></i>We adhere to strict safety standards on all job sites.</li>
+                                    <li><i className="flaticon-check-mark"></i>Fully licensed and insured professionals</li>
+                                    <li><i className="flaticon-check-mark"></i>Comprehensive service coverage across Sydney, Central Coast, and Wollongong</li>
+                                    <li><i className="flaticon-check-mark"></i>Transparent pricing with no hidden fees</li>
+                                    <li><i className="flaticon-check-mark"></i>Strict adherence to safety standards and environmental compliance</li>
                                 </ul>
-                                <h3>Commonly Asked Questions</h3>
+                                <h3>Common Questions</h3>
                                 <div className="mt-30" id="accordionExample">
                                     <div className="faq-item">
-                                        <h5 className="icon" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. What services do you offer?</h5>
+                                        <h5 className="icon" data-bs-toggle="collapse" data-bs-target="#collapseOne">1. What areas do you service?</h5>
                                         <div id="collapseOne" className="faq-item-body collapse show" data-bs-parent="#accordionExample">
-                                            <p>We offer a range of services including construction management, design-build solutions, renovations, and specialty contracting for both residential and commercial projects</p>
+                                            <p>We provide services across Sydney, Central Coast, and Wollongong, ensuring reliable coverage for all your property needs.</p>
                                         </div>
                                     </div>
                                     <div className="faq-item">
-                                        <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. Do you provide free estimates?</h5>
+                                        <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">2. Do you provide free quotes?</h5>
                                         <div id="collapseTwo" className="faq-item-body collapse" data-bs-parent="#accordionExample">
-                                            <p>Yes, we offer free estimates for all potential projects. We assess your requirements and provide a detailed quote without any obligation</p>
+                                            <p>Yes, we offer free quotes for all projects. Contact us to discuss your requirements and receive a detailed estimate.</p>
                                         </div>
                                     </div>
                                     <div className="faq-item">
                                         <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. Are you licensed and insured?</h5>
                                         <div id="collapseThree" className="faq-item-body collapse" data-bs-parent="#accordionExample">
-                                            <p>Yes, we are fully licensed and insured to operate in our service areas. This ensures that your project is protected and complies with all local regulations</p>
+                                            <p>Yes, we are fully licensed and insured. All our work complies with Australian regulations and safety standards.</p>
                                         </div>
                                     </div>
                                 </div>

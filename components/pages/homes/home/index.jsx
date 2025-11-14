@@ -1,44 +1,36 @@
-"use client";
+"use client"
 import SEO from "@/components/data/seo";
 import CustomCursor from "../../common/cursor";
 import SwitchTab from "../../common/dark-light";
-import HeaderOne from "@/components/layout/headers/header-one";
-import BannerOne from "./banner";
-import About from "./about";
-import TextSlide from "./text-slide";
-import Services from "./services";
-import Video from "./video";
-import ChooseUs from "./choose-us";
-import Portfolio from "./portfolio";
-import CounterUp from "./counter";
-import Experience from "./experience";
-import Testimonial from "./testimonial";
-import Blog from "./blog";
-import FooterOne from "@/components/layout/footers/footer-one";
+import HeaderTwo from "@/components/layout/headers/header-two";
+import BannerTwo from "./banner";
+import ServicesTwo from "./services";
+import AboutTwo from "./about";
+import PortfolioTwo from "./portfolio";
+import FaqArea from "./faq";
+import TestimonialTwo from "./testimonial";
+import BlogTwo from "./blog";
+import FooterTwo from "@/components/layout/footers/footer-two";
 import ScrollToTop from "../../common/scroll/scroll-to-top";
 
-const HomeOne = () => {
+const HomeTwo = () => {
     return (
-        <div>
-            <SEO pageTitle='Construction Company' />
+        <>
+            <SEO pageTitle="Sharpline Solutions - Property Services" />
             <CustomCursor />
             <SwitchTab />
-            <HeaderOne />
-            <BannerOne />
-            <About />
-            <TextSlide />
-            <Services />
-            <Video />
-            <ChooseUs />
-            <Portfolio />
-            <CounterUp />
-            <Experience />
-            <Testimonial /> 
-            <Blog /> 
-            <FooterOne />
+            <HeaderTwo />
+            <BannerTwo />
+            <ServicesTwo />
+            <AboutTwo />
+               <TestimonialTwo />
+            {/* <PortfolioTwo /> */}
+            <FaqArea />
+            <BlogTwo />
+            <FooterTwo />
             <ScrollToTop />
-        </div>
+        </>
     );
 };
 
-export default HomeOne;
+export default HomeTwo;

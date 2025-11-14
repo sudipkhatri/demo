@@ -1,6 +1,7 @@
 import Social from "@/components/data/social";
-import logo from "../../../public/assets/img/logo-2.png";
+import logo from "../../../public/assets/img/sharpline-logo.png";
 import Link from "next/link";
+import OptimizedImage from '@/components/common/OptimizedImage';
 
 const FooterThree = () => {
     return (
@@ -25,16 +26,22 @@ const FooterThree = () => {
                             <div className="row">
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="footer__one-widget mr-40">
-                                        <Link className="logo" href="/"><img src={logo.src} alt="logo"/></Link>
-                                        <h5>We’re Solutions for all construction</h5>
+                                        <Link className="logo" href="/"><OptimizedImage
+                                        src={logo.src}
+                                        alt="logo"
+                                        width={1149}
+                                        height={382}
+                                      /></Link>
+                                        <h5>We're Solutions for all property services</h5>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-sm-6 sm-mt-30">
                                     <div className="footer__one-widget address">
-                                        <h4>Address</h4>
+                                        <h4>Contact</h4>
                                         <div className="footer__one-widget-address">
-                                            <h6><Link href="https://www.google.com/maps">3891 Ranch view Richardson, California 62639</Link></h6>
-                                            <h4><Link href="tel:+123%20(256)%20568%2058">+123 (256) 568 58</Link></h4>
+                                            <h6>Coverage: Sydney, Central Coast, and Wollongong</h6>
+                                            <h4><Link href="tel:+61414603059">+61 414 603 059</Link></h4>
+                                            <h6><Link href="mailto:info@sharplinesolutions.com.au">info@sharplinesolutions.com.au</Link></h6>
                                         </div>
                                     </div>
                                 </div>

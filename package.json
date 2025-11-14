@@ -1,21 +1,28 @@
 {
-  "name": "buildgo",
+  "name": "sharpline-solutions",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-token": "node scripts/get-gmail-token.js",
+    "migrate-images": "node scripts/migrate-to-next-image.js",
+    "migrate-images:run": "node scripts/migrate-to-next-image.js --migrate"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "next": "^14.2.23",
-    "react": "^18",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "dotenv": "^17.2.3",
+    "googleapis": "^166.0.0",
+    "next": "^16.0.1",
+    "nodemailer": "^7.0.10",
+    "react": "^19.2.0",
     "react-countup": "^6.5.3",
-    "react-dom": "^18",
+    "react-dom": "^19.2.0",
     "react-modal-video": "^2.0.2",
-    "swiper": "^11.1.5",
+    "swiper": "^12.0.3",
     "wowjs": "^1.1.3"
   }
 }

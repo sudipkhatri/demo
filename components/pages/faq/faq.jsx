@@ -9,68 +9,33 @@ const FaqArea = () => {
                     <div className="col-xl-10">
                         <div className="wow fadeInUp" data-wow-delay=".4s" id="accordionExample">
                             <div className="faq-item">
-                                <h5 className="icon" data-bs-toggle="collapse" data-bs-target="#collapseOne">Can I return construction materials if I order too much?</h5>
+                                <h5 className="icon" data-bs-toggle="collapse" data-bs-target="#collapseOne">What areas do you service?</h5>
                                 <div id="collapseOne" className="faq-item-body collapse show" data-bs-parent="#accordionExample">
-                                    <p>Yes, many suppliers allow returns of unused construction materials, but the policy can vary. Here’s what you should consider:</p>
-                                    <ul>
-                                        <li><strong>Check the Policy:</strong> Review the supplier's return policy regarding unused materials.</li>
-                                        <li><strong>Time Limit:</strong> There may be a time limit for returns, so act quickly.</li>
-                                        <li><strong>Condition of Materials:</strong> Ensure that the materials are in their original, unused condition.</li>
-                                        <li><strong>Restocking Fees:</strong> Be aware that some suppliers may charge a restocking fee.</li>
-                                        <li><strong>Documentation:</strong> Keep your purchase receipt and any necessary documentation for the return process.</li>
-                                    </ul>
+                                    <p>We provide comprehensive property services across Sydney, Central Coast, and Wollongong. Our team is available to assist with projects throughout these regions.</p>
                                 </div>
                             </div>
                             <div className="faq-item">
-                                <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">What should I do if I receive damaged construction materials?</h5>
+                                <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">How quickly can you start a project?</h5>
                                 <div id="collapseTwo" className="faq-item-body collapse" data-bs-parent="#accordionExample">
-                                    <p>The cost of construction materials can be influenced by several factors, including:</p>
-                                    <ul>
-                                        <li><strong>Supply and Demand:</strong> Fluctuations in demand or shortages in supply can lead to price increases.</li>
-                                        <li><strong>Material Type:</strong> Different materials have varying costs based on quality and availability.</li>
-                                        <li><strong>Location:</strong> Transportation costs can vary depending on how far the materials need to be shipped.</li>
-                                        <li><strong>Market Trends:</strong> Economic conditions and market trends can impact prices.</li>
-                                        <li><strong>Seasonality:</strong> Certain materials may be cheaper during off-peak seasons.</li>
-                                    </ul>
+                                    <p>Project start times vary depending on scope and current schedule. We typically provide quotes within 24-48 hours and can often commence work within a few days of approval. Emergency services may be available sooner.</p>
                                 </div>
                             </div>
                             <div className="faq-item">
-                                <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Are there any eco-friendly options for construction materials?</h5>
+                                <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Do you handle waste disposal and recycling?</h5>
                                 <div id="collapseThree" className="faq-item-body collapse" data-bs-parent="#accordionExample">
-                                    <p>Yes, there are several eco-friendly options for construction materials, including:</p>
-                                    <ul>
-                                        <li><strong>Recycled Materials:</strong> Use materials made from recycled products, such as recycled steel and glass.</li>
-                                        <li><strong>Sustainable Wood:</strong> Opt for wood sourced from sustainably managed forests.</li>
-                                        <li><strong>Low-VOC Products:</strong> Choose paints, adhesives, and finishes that have low volatile organic compounds (VOCs).</li>
-                                        <li><strong>Insulation Options:</strong> Consider eco-friendly insulation materials like cellulose or sheep's wool.</li>
-                                        <li><strong>Green Certifications:</strong> Look for materials that have certifications such as LEED (Leadership in Energy and Environmental Design).</li>
-                                    </ul>
+                                    <p>Yes, our waste management service includes responsible disposal and recycling in compliance with Australian regulations. We handle sorting, collection, and proper disposal of property, demolition, and general waste.</p>
                                 </div>
                             </div>
                             <div className="faq-item">
-                                <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">How should I prepare for the delivery of construction materials?</h5>
+                                <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">Are your workers licensed and insured?</h5>
                                 <div id="collapseFour" className="faq-item-body collapse" data-bs-parent="#accordionExample">
-                                    <p>To prepare for the delivery of construction materials, you should:</p>
-                                    <ul>
-                                        <li><strong>Clear Access:</strong> Ensure that the delivery area is clear of obstacles for easy access.</li>
-                                        <li><strong>Schedule Delivery:</strong> Coordinate the delivery timing to align with your project schedule.</li>
-                                        <li><strong>Check Inventory:</strong> Confirm the quantities of materials ordered to avoid discrepancies.</li>
-                                        <li><strong>Provide Contact Info:</strong> Share contact information with the delivery driver for any necessary communication.</li>
-                                        <li><strong>Inspect Upon Arrival:</strong> Check the materials for damage upon delivery to address any issues immediately.</li>
-                                    </ul>
+                                    <p>Yes, all our team members are fully licensed, insured, and certified. We maintain comprehensive insurance coverage and adhere to all workplace safety standards.</p>
                                 </div>
                             </div>
                             <div className="faq-item">
-                                <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">What factors can affect the cost of construction materials?</h5>
+                                <h5 className="icon collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">What is included in your cleaning services?</h5>
                                 <div id="collapseFive" className="faq-item-body collapse" data-bs-parent="#accordionExample">
-                                    <p>The cost of construction materials can be influenced by several factors, including:</p>
-                                    <ul>
-                                        <li><strong>Supply and Demand:</strong> Fluctuations in demand or shortages in supply can lead to price increases.</li>
-                                        <li><strong>Material Type:</strong> Different materials have varying costs based on quality and availability.</li>
-                                        <li><strong>Location:</strong> Transportation costs can vary depending on how far the materials need to be shipped.</li>
-                                        <li><strong>Market Trends:</strong> Economic conditions and market trends can impact prices.</li>
-                                        <li><strong>Seasonality:</strong> Certain materials may be cheaper during off-peak seasons.</li>
-                                    </ul>
+                                    <p>Our contract and final cleaning services include thorough cleaning of all areas, windows, fixtures, and hard-to-reach spaces. We ensure your property meets the highest standards for occupancy or handover.</p>
                                 </div>
                             </div>
                         </div>

@@ -1,10 +1,11 @@
 import Link from "next/link";
-import logo1 from "../../../public/assets/img/logo-1.png";
+    import logo1 from "../../../public/assets/img/sharpline-logo.png";
 import MainMenu from './header-menu';
 import Search from './search';
 import { useState } from 'react';
 import SideBar from './offcanvas';
 import MobileMenuOne from './menu_sidebar/menu-one';
+import OptimizedImage from '@/components/common/OptimizedImage';
 
 const HeaderOne = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -17,7 +18,12 @@ const HeaderOne = () => {
                     <div className="header__area-menubar">
                         <div className="header__area-menubar-left one">
                             <div className="header__area-menubar-left-logo">
-                                <Link href='/'><img src={logo1.src} alt='logo' /></Link>
+                                <Link href='/'><OptimizedImage
+                                        src={logo1.src}
+                                        alt="logo"
+                                        width={1149}
+                                        height={382}
+                                      /></Link>
                             </div>
                         </div>
                         <div className="header__area-menubar-center">

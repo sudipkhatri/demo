@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import breadCrumbBg from "../../../public/assets/img/page/breadcrumb.jpg";
+import breadCrumbBg from "../../../public/assets/img/banner/banner.jpg";
 
 const BreadCrumb = ({title, innerTitle}) => {
     return (

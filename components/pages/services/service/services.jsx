@@ -6,6 +6,13 @@ const ServicesMain = () => {
         <>
         <div className="services__page section-padding-three">
             <div className="container">
+                <div className="row mb-60">
+                    <div className="col-xl-12">
+                        <div className="services__page-title t-center">
+                            <p className="wow fadeInUp" data-wow-delay=".4s">From demolition to final cleaning, we provide complete property solutions tailored to your needs across Sydney, Central Coast, and Wollongong.</p>
+                        </div>
+                    </div>
+                </div>
                 <div className="row">
                     {servicesData?.map((data, id) => (
                         <div className="col-lg-4 col-md-6 mt-25" key={id}>
