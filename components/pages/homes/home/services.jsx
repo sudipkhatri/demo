@@ -44,7 +44,7 @@ const ServicesTwo = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row mt-60 wow fadeInUp data_cursor" data-wow-delay=".5s" data-cursor-text="Drag">
+                <div className="row mt-60" data-wow-delay=".5s" data-cursor-text="Drag">
                     <div className="col-xl-12 slider-area">
                         <Swiper modules={[EffectFade, Autoplay, Navigation]} {...slideControl} >
                             {servicesData?.map((data, id) => (

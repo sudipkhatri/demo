@@ -62,7 +62,7 @@ const BannerTwo = () => {
 						</div>
 					</div>
 				</SwiperSlide>
-				<SwiperSlide>
+				{/* <SwiperSlide>
 					<div className="banner__two-area">	
 						<div className="banner__two-area-image" style={{backgroundImage: `url(${banner3.src})`}}></div>
 						<div className="container">
@@ -78,7 +78,7 @@ const BannerTwo = () => {
 							</div>
 						</div>
 					</div>
-				</SwiperSlide>
+				</SwiperSlide> */}
 				</Swiper>
 			</div>
 			<div className="banner__two-slide">
@@ -115,7 +115,7 @@ const BannerTwo = () => {
                                         width={1920}
                                         height={980}
                                       />
-											<h6>Serving Central Coast & Wollongong</h6>
+											<h6>Services At Your Place</h6>
 										</SwiperSlide>
 										<SwiperSlide className='banner__two-slide-area-thumb-item'>
 											<OptimizedImage
